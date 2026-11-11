@@ -1,0 +1,20 @@
+project:
+  name: credit-risk-classifier
+  random_seed: 42
+
+data:
+  uci_dataset_id: 350
+  target_column: default_payment_next_month
+  test_size: 0.20
+  validation_size: 0.20
+
+training:
+  primary_metric: average_precision
+  cv_folds: 3
+  threshold_metric: f1
+  threshold_candidates: 81
+
+tracking:
+  enabled: true
+  experiment_name: credit-risk-classifier
+  tracking_uri: ./mlruns
