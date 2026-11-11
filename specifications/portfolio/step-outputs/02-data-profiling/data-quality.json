@@ -1,0 +1,170 @@
+{
+  "dataset": {
+    "name": "Default of Credit Card Clients",
+    "repository": "UCI Machine Learning Repository",
+    "dataset_id": 350,
+    "rows": 30000,
+    "predictor_columns": 23,
+    "target": "Y",
+    "missing_values": 0
+  },
+  "categorical_values": {
+    "X2": {
+      "observed": [
+        1,
+        2
+      ],
+      "unexpected": [],
+      "expected": [
+        1,
+        2
+      ]
+    },
+    "X3": {
+      "observed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "unexpected": [
+        0,
+        5,
+        6
+      ],
+      "unexpected_counts": {
+        "0": 14,
+        "5": 280,
+        "6": 51
+      }
+    },
+    "X4": {
+      "observed": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unexpected": [
+        0
+      ],
+      "unexpected_counts": {
+        "0": 54
+      }
+    }
+  },
+  "duplicates": {
+    "full_row_duplicate_occurrences": 35,
+    "rows_participating_in_full_row_duplicate_groups": 70,
+    "feature_duplicate_occurrences": 56,
+    "repeated_feature_groups": 52,
+    "same_target_groups": 31,
+    "conflicting_target_groups": 21,
+    "rows_in_conflicting_target_groups": 46,
+    "decision": "No deduplication or relabeling during EDA; investigate during preprocessing/model validation."
+  },
+  "outliers_iqr": {
+    "X1": {
+      "count": 167,
+      "percentage": 0.556667
+    },
+    "X5": {
+      "count": 272,
+      "percentage": 0.906667
+    },
+    "X12": {
+      "count": 2400,
+      "percentage": 8
+    },
+    "X13": {
+      "count": 2395,
+      "percentage": 7.983333
+    },
+    "X14": {
+      "count": 2469,
+      "percentage": 8.23
+    },
+    "X15": {
+      "count": 2622,
+      "percentage": 8.74
+    },
+    "X16": {
+      "count": 2725,
+      "percentage": 9.083333
+    },
+    "X17": {
+      "count": 2693,
+      "percentage": 8.976667
+    },
+    "X18": {
+      "count": 2745,
+      "percentage": 9.15
+    },
+    "X19": {
+      "count": 2714,
+      "percentage": 9.046667
+    },
+    "X20": {
+      "count": 2598,
+      "percentage": 8.66
+    },
+    "X21": {
+      "count": 2994,
+      "percentage": 9.98
+    },
+    "X22": {
+      "count": 2945,
+      "percentage": 9.816667
+    },
+    "X23": {
+      "count": 2958,
+      "percentage": 9.86
+    }
+  },
+  "age_default_rate_percent": {
+    "21-30": 22.43712,
+    "31-40": 20.433119,
+    "41-50": 23.297252,
+    "51-60": 25.237857,
+    "61-79": 26.838235
+  },
+  "X6_default_rate_percent": {
+    "0": 12.811291,
+    "1": 33.947939,
+    "2": 69.141357,
+    "3": 75.776398,
+    "4": 68.421053,
+    "5": 50,
+    "6": 54.545455,
+    "7": 77.777778,
+    "8": 57.894737,
+    "-2": 13.229431,
+    "-1": 16.778051
+  },
+  "pearson_correlation_with_Y": {
+    "X5": 0.01389,
+    "X17": -0.005372,
+    "X16": -0.00676,
+    "X15": -0.010156,
+    "X14": -0.014076,
+    "X13": -0.014193,
+    "X12": -0.019644,
+    "X23": -0.053183,
+    "X22": -0.055124,
+    "X20": -0.05625,
+    "X21": -0.056827,
+    "X19": -0.058579,
+    "X18": -0.072929,
+    "X1": -0.15352
+  },
+  "decisions": {
+    "remove_outliers": false,
+    "deduplicate": false,
+    "recode_categories": false,
+    "train_test_split_performed": false,
+    "model_trained": false
+  }
+}
