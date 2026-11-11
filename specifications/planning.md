@@ -199,3 +199,10 @@ For every lesson: explain the production concept; inspect relevant code; let you
 - MLflow tracking: https://mlflow.org/docs/latest/ml/tracking/
 - FastAPI: https://fastapi.tiangolo.com/
 - GitHub Actions: https://docs.github.com/actions
+
+
+## 15. Compute environment and portfolio evidence workflow
+
+Training will be performed in Kaggle Notebooks because the local machine is not the intended training host. Use the local machine for source edits, Git/GitHub, lightweight tests, API integration, and documentation. This dataset is small tabular data; Kaggle CPU is the default and a GPU is optional, not a requirement.
+
+For every lesson, preserve the notebook source and relevant evidence under `specifications/portfolio/step-outputs/<step-number>-<step-name>/`. Include concise Markdown findings, JSON metrics, and plots where relevant. Keep actual outputs only; do not fabricate results. Do not commit raw datasets, secrets, or large model binaries by default. Follow [KAGGLE_WORKFLOW.md](KAGGLE_WORKFLOW.md) for naming, reproducibility, and export rules.
