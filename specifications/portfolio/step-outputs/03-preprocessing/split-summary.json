@@ -1,0 +1,83 @@
+{
+  "dataset": {
+    "rows": 30000,
+    "predictors": 23,
+    "target": "Y",
+    "class_distribution_percent": {
+      "0": 77.88,
+      "1": 22.12
+    }
+  },
+  "grouping": {
+    "unique_feature_groups": 29944,
+    "repeated_feature_occurrences": 56,
+    "grouping_columns": 23,
+    "target_excluded": true
+  },
+  "partitions": {
+    "train": {
+      "rows": 19208,
+      "features": 23,
+      "class_counts": {
+        "0": 14945,
+        "1": 4263
+      },
+      "class_percentages": {
+        "0": 77.81,
+        "1": 22.19
+      },
+      "percentage_of_dataset": 64
+    },
+    "validation": {
+      "rows": 4796,
+      "features": 23,
+      "class_counts": {
+        "0": 3739,
+        "1": 1057
+      },
+      "class_percentages": {
+        "0": 77.96,
+        "1": 22.04
+      },
+      "percentage_of_dataset": 16
+    },
+    "test": {
+      "rows": 5996,
+      "features": 23,
+      "class_counts": {
+        "0": 4680,
+        "1": 1316
+      },
+      "class_percentages": {
+        "0": 78.05,
+        "1": 21.95
+      },
+      "percentage_of_dataset": 20
+    }
+  },
+  "leakage_check": {
+    "identical_feature_groups_cross_partitions": false,
+    "status": "passed"
+  },
+  "preprocessing": {
+    "numerical": "median imputation + StandardScaler",
+    "categorical_and_repayment": "most-frequent imputation + OneHotEncoder(handle_unknown=ignore)",
+    "fit_on": "training only",
+    "transformed_shapes": {
+      "train": [
+        19208,
+        90
+      ],
+      "validation": [
+        4796,
+        90
+      ],
+      "test": [
+        5996,
+        90
+      ]
+    },
+    "transformed_feature_count": 90,
+    "training_numerical_means_approximately_zero": true
+  }
+}
